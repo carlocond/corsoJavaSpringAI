@@ -14,6 +14,8 @@ public class TestOverride {
         c.setStringa4("s4");
         c.setParentStr3("sp3");
 
+        System.out.println(c);
+
         System.out.println("Programma terminato");
     }
 

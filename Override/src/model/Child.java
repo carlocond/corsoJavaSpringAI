@@ -30,4 +30,9 @@ public class Child extends Parent {
     public void setParentStr3(String stringa3){
         super.setStringa3(stringa3);
     }
+
+    @Override
+    public String toString() {
+        return "Il valore della stringa3 e': " + stringa3;
+    }
 }
