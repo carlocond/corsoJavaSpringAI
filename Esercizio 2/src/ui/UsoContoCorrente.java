@@ -31,6 +31,7 @@ public class UsoContoCorrente {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Inserisci l'importo da trasferire: ");
         float importo = scanner.nextFloat();
+        scanner.nextLine();
 
         if (conto2.getSaldo() - importo >= 0) {
             conto1.setSaldo(conto1.getSaldo() + importo);
@@ -44,7 +45,6 @@ public class UsoContoCorrente {
         } else {
             System.out.println("Insufficient balance in the second account.");
         }
-
-
+        scanner.close();
     }
 }
