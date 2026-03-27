@@ -1,9 +1,6 @@
 package ui;
 
-import model.Differenza;
-import model.Divisione;
-import model.Prodotto;
-import model.Somma;
+import model.*;
 
 import java.util.Scanner;
 
@@ -11,6 +8,7 @@ public class ChiamanteOperazioni {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        OperazioniAritmetiche obj = null;
         boolean continua = false;
         int a;
         int b;
@@ -22,48 +20,48 @@ public class ChiamanteOperazioni {
             scanner.nextLine();
             switch (choice){
                 case 1:
-                    Somma s = new Somma();
+                    obj = new Somma();
                     System.out.println("Inserisci il primo numero");
                     a = scanner.nextInt();
                     scanner.nextLine();
                     System.out.println("Inserisci il secondo numero");
                     b = scanner.nextInt();
                     scanner.nextLine();
-                    result = s.operate(a, b);
-                    s.printResult(result);
+                    result = obj.operate(a, b);
+                    obj.printResult(result);
                     break;
                 case 2:
-                    Differenza diff = new Differenza();
+                    obj = new Differenza();
                     System.out.println("Inserisci il primo numero");
                     a = scanner.nextInt();
                     scanner.nextLine();
                     System.out.println("Inserisci il secondo numero");
                     b = scanner.nextInt();
                     scanner.nextLine();
-                    result = diff.operate(a, b);
-                    diff.printResult(result);
+                    result = obj.operate(a, b);
+                    obj.printResult(result);
                     break;
                 case 3:
-                    Prodotto p = new Prodotto();
+                    obj = new Prodotto();
                     System.out.println("Inserisci il primo numero");
                     a = scanner.nextInt();
                     scanner.nextLine();
                     System.out.println("Inserisci il secondo numero");
                     b = scanner.nextInt();
                     scanner.nextLine();
-                    result = p.operate(a, b);
-                    p.printResult(result);
+                    result = obj.operate(a, b);
+                    obj.printResult(result);
                     break;
                 case 4:
-                    Divisione div = new Divisione();
+                    obj = new Divisione();
                     System.out.println("Inserisci il primo numero");
                     a = scanner.nextInt();
                     scanner.nextLine();
                     System.out.println("Inserisci il secondo numero");
                     b = scanner.nextInt();
                     scanner.nextLine();
-                    result = div.operate(a, b);
-                    div.printResult(result);
+                    result = obj.operate(a, b);
+                    obj.printResult(result);
                     break;
                 case 0:
                     System.out.println("Arrivederci");
