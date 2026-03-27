@@ -1,6 +1,6 @@
 package model;
 
-public class Divisione implements OperazioniAritmetiche{
+public class Divisione extends AbstractOperazioni{
 
     @Override
     public int operate(int a, int b) {
@@ -11,7 +11,7 @@ public class Divisione implements OperazioniAritmetiche{
     }
 
     @Override
-    public void printResult(int result) {
-        System.out.println("Il quoziente di a e b: " + result);
+    String getOperazione() {
+        return "divisione";
     }
 }

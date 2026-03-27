@@ -1,6 +1,6 @@
 package model;
 
-public class Somma implements OperazioniAritmetiche{
+public class Somma extends AbstractOperazioni{
 
     @Override
     public int operate(int a, int b) {
@@ -8,7 +8,7 @@ public class Somma implements OperazioniAritmetiche{
     }
 
     @Override
-    public void printResult(int result) {
-        System.out.println("Il risultato della somma e': " + result);
+    String getOperazione() {
+        return "somma";
     }
 }
