@@ -1,8 +1,12 @@
 # Corso Java + Spring Boot + Spring AI
 
 [![Java](https://img.shields.io/badge/Java-100%25-blue)](https://www.java.com/)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Spring AI](https://img.shields.io/badge/Spring%20AI-lab%2Fexperimental-orange)
+![Build](https://img.shields.io/badge/Build-Maven%20%7C%20Gradle-informational)
 ![Repo](https://img.shields.io/badge/Repo-corsoJavaSpringAI-black)
-![Status](https://img.shields.io/badge/Status-In%20sviluppo-success)
+![Status]([https://img.shields.io/badge/Status-In%20sviluppo-success](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FStatus-Completato-success
+))
 
 > Questo repository raccoglie una serie di esercizi e progetti sviluppati durante un corso dedicato a **Java** con framework **Spring Boot** e **Spring AI**.
 
@@ -10,13 +14,33 @@
 
 ## 📌 Contenuti del repository
 
-Il repository è organizzato in cartelle tematiche e progressive. In particolare trovi:
+### Java Core
+- sintassi, tipi, strutture dati e controllo di flusso
+- classi, metodi, costruttori, incapsulamento
+- gestione input/output di base
+- eccezioni (try/catch), validazione e casi limite
 
-- **Esercizi**: esercizi progressivi per consolidare i concetti base e avanzati di Java  
-- **Interfacce**: esempi e pratica su interfacce, implementazioni e design più pulito
-- **Override**: overriding, ereditarietà e comportamento dei metodi
-- **Polimorfismo**: esempi su polimorfismo, binding, gerarchie e casi d’uso
-- **out**: cartella di output/build (spesso generata dall’IDE)
+### OOP (Object-Oriented Programming)
+- ereditarietà, overriding, `super`
+- polimorfismo e late binding
+- astrazione e progettazione con interfacce
+- composizione vs ereditarietà
+- organizzazione del codice in package e responsabilità chiare
+
+### Testing e build (quando presenti nei progetti)
+- esecuzione test da CLI
+- progetti Maven/Gradle a seconda del modulo
+
+### Spring Boot (introduzione/pratica)
+- struttura di un progetto Spring Boot
+- concetti base: controller, service, dependency injection, microservices, restapi
+- configurazione e avvio applicazione
+
+### Spring AI (introduzione/pratica)
+- integrazione “AI-ready” in applicazioni Spring (moduli dedicati quando presenti)
+- concetti: prompt, modelli, integrazioni e configurazioni (in base agli esercizi del corso)
+
+Il repository è organizzato in cartelle tematiche e progressive.
 
 ---
 
@@ -28,6 +52,7 @@ L’obiettivo è costruire una base solida su:
 - **OOP avanzata** (interfacce, overriding, polimorfismo)
 - **Best practice** (organizzazione del codice, leggibilità, riuso)
 - Introduzione e pratica con **Spring Boot**
+- Sviluppo di Web App basate su microservizi, servizi rest, api...
 - Approccio moderno con **Spring AI** (integrazione AI nelle app Spring)
 
 ---
