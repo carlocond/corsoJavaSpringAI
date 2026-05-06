@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: Gateway
+  cloud:
+    gateway:
+      server:
+        webflux:
+          routes:
+            # User Service Routes
+            - id: user-service
+              uri: ${USER_SERVICE_URL:http://localhost:8081}
+              predicates:
+              - Path=/api/users/**, /api/auth/**
+
+            # Worker-Enterprise Service Routes
+            - id: worker-service
+              uri: ${USER_SERVICE_URL:http://localhost:8082}
+              predicates:
+              - Path=/api/workers/**, /api/enterprises/**
+
+          # Global CORS configuration
+          globalcors:
+            corsConfigurations:
+              '[/**]':
+                allowedOrigins: ${CORS_ALLOWED_ORIGINS:*}
+                allowedMethods:
+                  - GET
+                  - POST
+                  - PUT
+                  - DELETE
+                  - PATCH
+                allowedHeaders: "*"
+                allowCredentials: false
+server:
+  port: ${SERVER_PORT:8080}

@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: esercizioRestClient
+	
+server:
+port: 8081
+
+rest-localita:
+base-url: "http://localhost:8080/api/localita"
