@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: workerService
+
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/workerservice?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+   # driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+
+# OpenAPI/Swagger
+  springdoc:
+    api-docs:
+      path: /api-docs
+    swagger-ui:
+      path: /swagger-ui.html
+      operationsSorter: method
+      tagsSorter: alpha
+
+server:
+  port: ${SERVER_PORT:8082}
+
