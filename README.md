@@ -5,7 +5,7 @@
 ![Spring AI](https://img.shields.io/badge/Spring%20AI-lab%2Fexperimental-orange)
 ![Build](https://img.shields.io/badge/Build-Maven%20%7C%20Gradle-informational)
 ![Repo](https://img.shields.io/badge/Repo-corsoJavaSpringAI-black)
-![Status](![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FStatus-Completato-success))
+![Status](https://img.shields.io/badge/https%3A%2F%2Fimg.shields.io%2Fbadge%2FStatus-Completato-success)
 
 > Questo repository raccoglie una serie di esercizi e progetti sviluppati durante un corso dedicato a **Java** con framework **Spring Boot** e **Spring AI**.
 
